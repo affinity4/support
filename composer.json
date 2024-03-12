@@ -1,0 +1,39 @@
+{
+    "name": "affinity4/support",
+    "description": "Add Laravel style facades, traits and helper functions to any PSR-11 Container app",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Watts",
+            "email": "info@luke-watts.com",
+            "homepage": "https://luke-watts.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Affinity4\\Support\\": "src/"
+        },
+        "files": [
+            "./src/helpers.php",
+            "./src/Collections/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Affinity4\\Support\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "psr/http-factory": "^1.0",
+        "symfony/var-dumper": "^6.4"
+    },
+    "require-dev": {
+        "slim/slim": "^4.0",
+        "phpunit/phpunit": "^10",
+        "guzzlehttp/psr7": "^2",
+        "php-di/php-di": "^7.0",
+        "php-di/slim-bridge": "^3.4"
+    }
+}
